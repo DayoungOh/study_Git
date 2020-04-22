@@ -1,0 +1,32 @@
+[GIT]
+1. 로컬 저장소 생성(git init) -> .git이라는 숨김폴더 생성 됨
+2. 저장소에 올릴 소스 선택(git add ~)
+3. 소스를 덩어리화(git commit -m "메시지")
+4. github에서 repository를 생성하고 그 url을 원격저장소에 연결(git remote add origin URL)
+5. 만든 repository에 소스 push
+(git push origin master)
+
+git push origin master
+에서 origin은 원격저장소 명,
+master는 branch명
+
+
+[Git Bash 명령어]
+현재 폴더 위치 확인 = pwd
+현재 폴더에 어떤 파일들이 있는지 확인 = ls
+숨김폴더나 숨김파일까지 확인 = ls -al
+git 커밋 상태 확인 명령어 = 'git log'
+
+
+[원격저장소에서 소스 clone 해오기]
+1. git에서 소스 받아올 폴더 생성 후 그 디렉토리로 이동
+2. github에서 clone 버튼 누른 후 url 복사 후 git bash에서 clone(git clone URL .)
+ .은 그 현재 폴더에 저장소를 받아오라는 뜻
+
+[원격저장소에서 소스 pull 해오기]
+1. 받고싶은 폴더로 이동
+2. git pull origin master
+
+
+clone(최초 복제) / pull(협업 전 동기화) 차이점...?
+
